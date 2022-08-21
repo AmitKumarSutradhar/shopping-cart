@@ -23,10 +23,12 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
     const newcaseNumber = updateCaseNumber(true);
 
     caseTotalPrice(newcaseNumber);
+    caculateSubtotal();
 })
 
 document.getElementById('btn-case-minus').addEventListener('click',function(){
     const newCaseNumber = updateCaseNumber(false);
 
     caseTotalPrice(newCaseNumber);
+    caculateSubtotal();
 })
